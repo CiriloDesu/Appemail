@@ -5,13 +5,13 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.rememberNavController
 import com.fiap.appemail.screen.MainScreen
-import com.fiap.appemail.ui.theme.GmailTheme
+import com.fiap.appemail.ui.theme.AppemailTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            GmailTheme {
+            AppemailTheme {
                 val navController = rememberNavController()
                 MainScreen(
                     navController = navController

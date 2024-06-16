@@ -16,17 +16,6 @@ val navScreenItemList = listOf(
         title = "Primary",
         icon = Icons.Outlined.Inbox,
     ),
-    MenuItem(
-        id = "promotion",
-        title = "Promotion",
-        icon = Icons.Outlined.Sell,
-    ),
-    MenuItem(
-        id = "social",
-        title = "Social",
-        icon = Icons.Outlined.Group,
-    ),
-
     )
 
 val googleAppsItemList = listOf(
@@ -50,52 +39,6 @@ val allLabelsItemList = listOf(
         title = "Starred",
         icon = Icons.Outlined.Star,
     ),
-    MenuItem(
-        id = "snoozed",
-        title = "Snoozed",
-        icon = Icons.Outlined.Schedule,
-    ),
-    MenuItem(
-        id = "important",
-        title = "Important",
-        icon = Icons.Outlined.LabelImportant,
-    ),
-    MenuItem(
-        id = "sent",
-        title = "Sent",
-        icon = Icons.Outlined.Send,
-    ),
-    MenuItem(
-        id = "scheduled",
-        title = "Scheduled",
-        icon = Icons.Outlined.ScheduleSend,
-    ),
-    MenuItem(
-        id = "outbox",
-        title = "Outbox",
-        icon = Icons.Outlined.Outbox,
-    ),
-    MenuItem(
-        id = "draft",
-        title = "Draft",
-        icon = Icons.Outlined.Drafts,
-    ),
-    MenuItem(
-        id = "allMails",
-        title = "All mail",
-        icon = Icons.Outlined.MarkAsUnread,
-    ),
-    MenuItem(
-        id = "spam",
-        title = "Spam",
-        icon = Icons.Outlined.Report,
-    ),
-    MenuItem(
-        id = "bin",
-        title = "Bin",
-        icon = Icons.Outlined.Delete,
-    ),
-
     )
 
 

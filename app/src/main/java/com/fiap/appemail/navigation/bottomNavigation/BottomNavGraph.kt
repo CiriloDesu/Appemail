@@ -1,12 +1,12 @@
 package com.fiap.appemail.navigation.bottomNavigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.fiap.appemail.navigation.bottomNavigation.BottomBarScreens
 import com.fiap.appemail.screen.MailScreen
-import com.fiap.appemail.screen.MeetScreen
+import com.fiap.appemail.screen.SendScreen
 
 @Composable
 fun BottomNavGraph(
@@ -32,7 +32,7 @@ fun BottomNavGraph(
             BottomBarScreens.MeetScreen.route
         )
         {
-            MeetScreen(
+            SendScreen(
                 onNavigationIconClick = onNavigationIconClick,
                 onShowUserDialog = onShowUserDialog
             )
@@ -40,3 +40,7 @@ fun BottomNavGraph(
         }
     }
 }
+
+@Preview
+@Composable
+fun BottomNavGraphPreview() { }

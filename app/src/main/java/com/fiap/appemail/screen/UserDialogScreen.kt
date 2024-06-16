@@ -21,6 +21,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
@@ -79,7 +80,7 @@ fun ShowUserDialog(
                     Spacer(modifier = Modifier.width(8.dp))
                     Column(modifier = modifier) {
                         Text(text = "Cirilo", fontSize = 18.sp)
-                        Text(text = "Cirilo.........", fontSize = 12.sp)
+                        Text(text = "Cirilo@email.com", fontSize = 12.sp)
                         Spacer(modifier = Modifier.height(16.dp))
                         OutlinedButton(
                             onClick = { /*TODO*/ },
@@ -90,7 +91,7 @@ fun ShowUserDialog(
                             )
                         ) {
                             Text(
-                                text = "Google Account", fontSize = 16.sp
+                                text = "Email Account", fontSize = 16.sp
                             )
                         }
                         Spacer(modifier = Modifier.height(16.dp))
@@ -168,4 +169,10 @@ fun ShowUserDialog(
             }
         }
     }
+}
+
+@Preview
+@Composable
+fun ShowUserDialogPreview() {
+    ShowUserDialog(onCloseUserDialog = {})
 }

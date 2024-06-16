@@ -4,7 +4,6 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
@@ -16,13 +15,13 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.fiap.appemail.R
-import com.fiap.appemail.ui.theme.DarkBlue
 
 @Composable
-fun MeetScreen(
+fun SendScreen(
     onNavigationIconClick: () -> Unit,
     onShowUserDialog: () -> Unit,
 ) {
@@ -44,30 +43,8 @@ fun MeetScreen(
             Column(
                 modifier = Modifier.padding(horizontal = 8.dp)
             ) {
-                Spacer(modifier = Modifier.height(16.dp))
-                Button(
-                    onClick = { /*TODO*/ },
-                    shape = RoundedCornerShape(percent = 50),
-                    modifier = Modifier.fillMaxWidth(),
-                    colors = ButtonDefaults.buttonColors(
-                        backgroundColor = DarkBlue,
-                        contentColor = Color.White,
-                    )
-                ) {
-                    Text(text = "New meeting")
-                }
-                OutlinedButton(
-                    onClick = { /*TODO*/ },
-                    shape = RoundedCornerShape(percent = 50),
-                    modifier = Modifier.fillMaxWidth(),
-                    colors = ButtonDefaults.outlinedButtonColors(
-                        backgroundColor = Color.White,
-                        contentColor = DarkBlue,
-                    )
-                ) {
-                    Text(text = "Meet new people")
-                }
-                MeetPagerScreen()
+
+                EmailCalenScreen()
 
             }
         }
@@ -92,9 +69,10 @@ fun CenterAlignTopAppbar(
 
         Text(
             modifier = Modifier.weight(1f),
-            text = "Meet",
+            text = "Alpha 0.1.0",
             textAlign = TextAlign.Center,
             fontSize = 20.sp,
+            color = Color.Yellow,
         )
         Image(
             painter = painterResource(id = R.drawable.profile),
@@ -106,4 +84,10 @@ fun CenterAlignTopAppbar(
             contentScale = ContentScale.Crop
         )
     }
+}
+
+@Preview
+@Composable
+fun MeetScreenPreview() {
+    SendScreen(onNavigationIconClick = {}, onShowUserDialog = {})
 }

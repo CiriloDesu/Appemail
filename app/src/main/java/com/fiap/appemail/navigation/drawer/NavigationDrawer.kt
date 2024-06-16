@@ -8,6 +8,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 
@@ -19,7 +20,7 @@ fun DrawerMenuHeader() {
             .height(70.dp)
             .padding(16.dp)
     ) {
-        Text(text = "Gmail", color = Color.Red)
+        Text(text = "Email", color = Color.Red)
     }
 }
 
@@ -67,4 +68,10 @@ fun DrawerBody() {
             DrawerItem(item = item)
         }
     }
+}
+
+@Preview
+@Composable
+fun DrawerBodyPreview() {
+    DrawerBody()
 }

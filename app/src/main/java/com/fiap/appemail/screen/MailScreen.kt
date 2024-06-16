@@ -121,15 +121,15 @@ fun MailScreen(
             )
 
         }
-        MailFloatingActionButton(
-            extended = { extendState },
-            onClick = {},
-            modifier = Modifier
-                .align(
-                    Alignment.BottomEnd
-                )
-                .offset(x = (-10).dp, y = (-10).dp)
-        )
+//        MailFloatingActionButton(
+//            extended = { extendState },
+//            onClick = {},
+//            modifier = Modifier
+//                .align(
+//                    Alignment.BottomEnd
+//                )
+//                .offset(x = (-10).dp, y = (-10).dp)
+//        )
 
     }
 }
